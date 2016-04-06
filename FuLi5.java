@@ -3,85 +3,86 @@ import java.util.Scanner;
 public class FuLi5{
 	
 	public static void main(String[] args) {
-		Scanner scanner=new Scanner(System.in);
-        System.out.println("\n¸´Àû¼ÆËã°´ 1\nµ¥Àû¼ÆËã°´ 2\n¼ÆËã³ï¼¯µÄÑøÀÏ½ğ°´ 3\n¼ÆËãÊ±¼ä°´ 4\n¼ÆËãÄúÒªµÄÀûÂÊ°´ 5\n¼ÆËã±¾ÀûºÍÍ¶×Ê°´ 6\n¼ÆËãµÈ¶î±¾Ï¢»¹¿î°´ 7\n\n");
+	do{
+	Scanner scanner=new Scanner(System.in);
+        System.out.println("\nå¤åˆ©è®¡ç®—æŒ‰ 1\nå•åˆ©è®¡ç®—æŒ‰ 2\nè®¡ç®—ç­¹é›†çš„å…»è€é‡‘æŒ‰ 3\nè®¡ç®—æ—¶é—´æŒ‰ 4\nè®¡ç®—æ‚¨è¦çš„åˆ©ç‡æŒ‰ 5\nè®¡ç®—æœ¬åˆ©å’ŒæŠ•èµ„æŒ‰ 6\nè®¡ç®—ç­‰é¢æœ¬æ¯è¿˜æ¬¾æŒ‰ 7\n\n");
 		int C=scanner.nextInt();
                      if(C==1){
-        	                 System.out.println("ÊäÈëÄúµÄ±¾½ğ£º");
+        	                 System.out.println("è¾“å…¥æ‚¨çš„æœ¬é‡‘ï¼š");
         	                 double money = new Scanner(System.in).nextDouble();
-        	                 System.out.println("ÊäÈëÄúÆÚÍûµÄÄêÀûÂÊ£º");
+        	                 System.out.println("è¾“å…¥æ‚¨æœŸæœ›çš„å¹´åˆ©ç‡ï¼š");
         	                 double rate = new Scanner(System.in).nextDouble();
-        	                 System.out.println("ÊäÈëÄúÆÚÍûµÄ´æÈëÆÚ£¨Äê£©Êı£º");
+        	                 System.out.println("è¾“å…¥æ‚¨æœŸæœ›çš„å­˜å…¥æœŸï¼ˆå¹´ï¼‰æ•°ï¼š");
         	                 int year = new Scanner(System.in).nextInt();
         	                 double result=money*(1+rate*year);
-        	                 System.out.println("¼ÆËã½á¹ûÎª:"+result);
+        	                 System.out.println("è®¡ç®—ç»“æœä¸º:"+result);
         	           }
                      if(C==2){
-    	                 System.out.println("ÊäÈëÄúµÄ±¾½ğ£º");
+    	                 System.out.println("è¾“å…¥æ‚¨çš„æœ¬é‡‘ï¼š");
     	                 double money = new Scanner(System.in).nextDouble();
-    	                 System.out.println("ÊäÈëÄúÆÚÍûµÄÄêÀûÂÊ£º");
+    	                 System.out.println("è¾“å…¥æ‚¨æœŸæœ›çš„å¹´åˆ©ç‡ï¼š");
     	                 double rate = new Scanner(System.in).nextDouble();
-    	                 System.out.println("ÊäÈëÄúÆÚÍûµÄ´æÈëÆÚ£¨Äê£©Êı£º");
+    	                 System.out.println("è¾“å…¥æ‚¨æœŸæœ›çš„å­˜å…¥æœŸï¼ˆå¹´ï¼‰æ•°ï¼š");
     	                 int year = new Scanner(System.in).nextInt();
     	                 double result=money + money * rate * year;
-    	                 System.out.println("¼ÆËã½á¹ûÎª:"+result);
+    	                 System.out.println("è®¡ç®—ç»“æœä¸º:"+result);
     	              }
                      if(C==3){
-                    	      System.out.println("ÊäÈëÄúĞèÒª³ïµÃµÄ½ğ¶î£º");
+                    	      System.out.println("è¾“å…¥æ‚¨éœ€è¦ç­¹å¾—çš„é‡‘é¢ï¼š");
                               double futuremoney = new Scanner(System.in).nextDouble();
-                    	      System.out.println("ÊäÈëÄúÆÚÍûµÄ´æÈëÆÚ£¨Äê£©Êı£º");
+                    	      System.out.println("è¾“å…¥æ‚¨æœŸæœ›çš„å­˜å…¥æœŸï¼ˆå¹´ï¼‰æ•°ï¼š");
                     	      int year = new Scanner(System.in).nextInt();
-                    	      System.out.println("ÊäÈëÄúÆÚÍûµÄÀûÂÊ£º");
+                    	      System.out.println("è¾“å…¥æ‚¨æœŸæœ›çš„åˆ©ç‡ï¼š");
                     	      double rate = new Scanner(System.in).nextDouble();
                     	      double result = futuremoney/(1+rate*year);
-                              System.out.println("ÄúĞèÒª´æµÄ±¾½ğÊÇ:"+result);
+                              System.out.println("æ‚¨éœ€è¦å­˜çš„æœ¬é‡‘æ˜¯:"+result);
                       }
                      if(C==4){
-    	                 System.out.println("ÊäÈëÄúµÄ±¾½ğ£º");
+    	                 System.out.println("è¾“å…¥æ‚¨çš„æœ¬é‡‘ï¼š");
     	                 double money = new Scanner(System.in).nextDouble();
-    	                 System.out.println("ÊäÈëÄúÆÚÍûµÄÄêÀûÂÊ£º");
+    	                 System.out.println("è¾“å…¥æ‚¨æœŸæœ›çš„å¹´åˆ©ç‡ï¼š");
     	                 double rate = new Scanner(System.in).nextDouble();
-    	                 System.out.println("ÊäÈëÄúÆÚÍûµÄÎ´À´×Ü½ğ¶î:");
+    	                 System.out.println("è¾“å…¥æ‚¨æœŸæœ›çš„æœªæ¥æ€»é‡‘é¢:");
     	                 double zong= new Scanner(System.in).nextInt();
     	                 double result=(zong - money) / (rate * money);
-    	                 System.out.println("ÄêÊıÎª£º:"+result);
+    	                 System.out.println("å¹´æ•°ä¸ºï¼š:"+result);
     	              }
                      if(C==5){
-    	                 System.out.println("ÊäÈëÄúµÄ±¾½ğ£º");
+    	                 System.out.println("è¾“å…¥æ‚¨çš„æœ¬é‡‘ï¼š");
     	                 double money = new Scanner(System.in).nextDouble();
-    	                 System.out.println("ÊäÈëÄúÆÚÅÎµÄÆÚÊı£¨Äê£©£º");
+    	                 System.out.println("è¾“å…¥æ‚¨æœŸç›¼çš„æœŸæ•°ï¼ˆå¹´ï¼‰ï¼š");
     	                 double year = new Scanner(System.in).nextDouble();
-    	                 System.out.println("ÊäÈëÄúÆÚÍûµÄÎ´À´×Ü½ğ¶î:");
+    	                 System.out.println("è¾“å…¥æ‚¨æœŸæœ›çš„æœªæ¥æ€»é‡‘é¢:");
     	                 double zong= new Scanner(System.in).nextInt();
     	                 double result= zong / (money * year);
-    	                 System.out.println("ĞèÒªµÄÀûÂÊÎª:"+result);
+    	                 System.out.println("éœ€è¦çš„åˆ©ç‡ä¸º:"+result);
     	              }
                      if(C==6){
                     	 double result=0;
-    	                 System.out.println("ÊäÈëÄúµÄ±¾½ğ£º");
+    	                 System.out.println("è¾“å…¥æ‚¨çš„æœ¬é‡‘ï¼š");
     	                 double money = new Scanner(System.in).nextDouble();
-    	                 System.out.println("ÊäÈëÄúÃ¿ÄêµÄÍ¶×Ê½ğ¶î£º");
+    	                 System.out.println("è¾“å…¥æ‚¨æ¯å¹´çš„æŠ•èµ„é‡‘é¢ï¼š");
     	                 double every= new Scanner(System.in).nextInt();
-    	                 System.out.println("ÊäÈëÄúÆÚÅÎµÄÆÚÊı£¨Äê£©£º");
+    	                 System.out.println("è¾“å…¥æ‚¨æœŸç›¼çš„æœŸæ•°ï¼ˆå¹´ï¼‰ï¼š");
     	                 double year = new Scanner(System.in).nextDouble();
-    	                 System.out.println("ÊäÈëÄúÆÚÅÎµÄÄêÀûÂÊ£º");
+    	                 System.out.println("è¾“å…¥æ‚¨æœŸç›¼çš„å¹´åˆ©ç‡ï¼š");
     	                 double rate= new Scanner(System.in).nextInt();
     	                 for (int j = 0; j < year; j++) {
     	                 result = (1 + rate) * (every+money);
     	                 }
-    	                 System.out.println("ĞèÒªµÄÀûÂÊÎª:"+result);
+    	                 System.out.println("éœ€è¦çš„åˆ©ç‡ä¸º:"+result);
 	                }
                      if(C==7){
-    	                 System.out.println("ÊäÈëÄúµÄ´û¿î½ğ¶î£º");
+    	                 System.out.println("è¾“å…¥æ‚¨çš„è´·æ¬¾é‡‘é¢ï¼š");
     	                 double money = new Scanner(System.in).nextDouble();
-    	                 System.out.println("ÊäÈëÄêÀûÂÊ£º");
+    	                 System.out.println("è¾“å…¥å¹´åˆ©ç‡ï¼š");
     	                 double rate = new Scanner(System.in).nextDouble();
-    	                 System.out.println("ÊäÈëÄú»¹¿îÆÚÊı£¨Äê£©:");
+    	                 System.out.println("è¾“å…¥æ‚¨è¿˜æ¬¾æœŸæ•°ï¼ˆå¹´ï¼‰:");
     	                 double year= new Scanner(System.in).nextInt();
     	                 double result= money * (rate/12) * Math.pow( 1 + rate/12 ,12 * year)/(Math.pow(1 + rate/12, 12 * year)-1);
-    	                 System.out.println("ÔÂ»¹¿îÎª:"+result);
+    	                 System.out.println("æœˆè¿˜æ¬¾ä¸º:"+result);
     	              }
-                       
-	       }
+             	}while(true);    
+	 }
  } 
 
